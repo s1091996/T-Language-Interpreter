@@ -6,7 +6,7 @@ through a tree-walking evaluator.
 
 ## Features
 
-- Integer and real-number values
+- Integer and decimal numbers
 - Local variable declarations and assignments
 - Arithmetic expressions: `+`, `-`, `*`, and `/`
 - Comparisons: `>`, `<`, `>=`, `<=`, `==`, and `!=`
