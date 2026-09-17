@@ -34,11 +34,6 @@ Tree-Walking Evaluator：走訪 AST、執行敘述
         ↓
 終端機輸出／等待使用者輸入
 ```
-- `t_syntax_tokenizer.l`：將原始碼切分為 Parser 可處理的 Token，例如 `INT`、`IF`、識別字與數值。
-- `t_program_parser.y`：定義 T 語言的 grammar；成功比對規則時呼叫節點建立函式，將程式組成 AST。
-- `t_program_structures.h`：宣告 AST 節點、函式與各種執行函式使用的資料結構。
-- `t_program_execution.c`：建立 AST 節點，並以 `execute_tree()`、`execute_exprnode()` 等函式走訪與執行 AST。
-- `t2c.c`：程式入口，開啟使用者指定的 `.t` 檔並呼叫 `yyparse()`。
 
 ## 4. 專案結構（Project Structure）
 
