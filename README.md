@@ -34,16 +34,6 @@ Tree-Walking Evaluator：走訪 AST、執行敘述
         ↓
 終端機輸出／等待使用者輸入
 ```
-
-```mermaid
-flowchart TD
-    A[T 語言原始碼 .t] --> B[Flex Lexer<br/>t_syntax_tokenizer.l]
-    B --> C[Bison Parser<br/>t_program_parser.y]
-    C --> D[AST 與 Tree 結構<br/>t_program_structures.h]
-    D --> E[Tree-Walking Evaluator<br/>t_program_execution.c]
-    E --> F[終端機輸出或使用者輸入]
-```
-
 - `t_syntax_tokenizer.l`：將原始碼切分為 Parser 可處理的 Token，例如 `INT`、`IF`、識別字與數值。
 - `t_program_parser.y`：定義 T 語言的 grammar；成功比對規則時呼叫節點建立函式，將程式組成 AST。
 - `t_program_structures.h`：宣告 AST 節點、函式與各種執行函式使用的資料結構。
